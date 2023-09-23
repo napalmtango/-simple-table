@@ -1,0 +1,78 @@
+html {
+    font-family: 'Rajdhani', sans-serif;
+    font-size:18px;
+}
+
+table {
+}
+
+table, th, td {
+    border: 6px solid white;
+    border-collapse: collapse;
+    padding: 18px;
+}
+
+td {
+    background-color: blanchedalmond;
+}
+
+th {
+    background-color: #ffa500;
+    background-image: url("images/numbers-header-bg.png");
+    background-repeat: no-repeat;
+    background-position: -42px -15px;
+
+    color: #FFF;
+    font-size: 1.6rem;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.black-bg {
+    background-color: black;
+}
+
+.orange-bg {
+    background-color: orange;
+}
+
+.round10 {
+    border-radius: 10px;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: 40px auto;
+}
+
+.img-container {
+    position: relative;
+}
+
+.center-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.less-padding {
+    padding: 5px;
+}
+
+.orange-text {
+    color: #c46110;
+    font-size: 1.2rem;
+    margin-top: -30px;
+}
+
+.shadow {
+    box-shadow: 5px 10px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 561px;
+}

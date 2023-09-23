@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+   <!-- <style>
+        html {
+            font-family: 'Rajdhani', sans-serif;
+            font-size:18px;
+        }
+        table {
+        }
+        table, th, td {
+            border: 6px solid white;
+            border-collapse: collapse;
+            padding: 18px;
+        }
+        td {
+            background-color: blanchedalmond;
+        }
+        th {
+            background-color: #ffa500;
+            background-image: url("./numbers-header-bg.png");
+            background-repeat: no-repeat;
+            background-position: -42px -15px;
+
+            color: #FFF;
+            font-size: 1.6rem;
+        }
+        .center-text {
+            text-align: center;
+        }
+        .black-bg {
+            background-color: black;
+        }
+        .orange-bg {
+            background-color: orange;
+        }
+        .round10 {
+            border-radius: 10px;
+        }
+        .grid-container {
+            display: inline-grid;
+            grid-template-columns: 40px auto;
+        }
+        .img-container {
+            position: relative;
+        }
+        .center-img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .less-padding {
+            padding: 5px;
+        }
+        .orange-text {
+            color: #c46110;
+            text-size: 1.2rem;
+            margin-top: -30px;
+        }
+        .shadow {
+            box-shadow: 5px 10px;
+        }
+    </style> -->
+</head>
+
+<body>
+  <div class="wrapper">
+    <form width="560px" action="/example_action.html" method="get">
+      <table>
+              <tr><th colspan="2">Five Questions you MUST answer</th></tr>
+              
+              <tr>    
+                  <td>
+                      <div class="grid-container" >
+                          <div class="img-container">
+                              <img class="center-img" src="images/number1-orange-circle.png" width="20px"  alt="Numeral one within orange circle">
+                          </div>
+                              
+                          <div>
+                              <label for="music">
+                                  What is your favorite <br>genre of music?
+                              </label>
+                          </div>
+                      </div><!--END GRID CONTAINER-->
+                  </td>
+                  <td>
+                      <input type="text" id="music" name="music" style="width:215px;">
+                  </td>
+              </tr>
+
+
+              <tr>
+                  <td>
+                      <div class="grid-container" >
+                          <div class="img-container">
+                              <img class="center-img" src="images/number2-orange-circle.png" width="20px"  alt="Numeral two within orange circle">
+                          </div>
+                              
+                          <div>
+                                  Do you have a pet?
+                          </div>
+                      </div><!--END GRID CONTAINER-->
+                  </td>
+                      
+                  <td>
+                      <input type="radio" id="petyes" name="pet-question">
+                      <label for="petyes">Yes</label>
+                      <input type="radio" id="petno" name="pet-question">
+                      <label for="petno">No</label>
+                  </td>
+              </tr>
+
+
+              <tr>
+                  <td>
+                      <div class="grid-container" >
+                          <div class="img-container">
+                              <img class="center-img" src="images/number3-orange-circle.png" width="20px"  alt="Numeral three within orange circle">
+                          </div>
+                              
+                          <div>
+                              <label for="petname">
+                                  What is his name?
+                              </label>
+                          </div>
+                      </div><!--END GRID CONTAINER-->
+                  </td>
+
+                  <td>
+                      <input type="text" id="petname" name="pet-name" style="width:215px;">
+                  </td>
+              </tr>
+
+
+              <tr>
+                  <td>
+                      <div class="grid-container" >
+                          <div class="img-container">
+                              <img class="center-img" src="images/number4-orange-circle.png" width="20px"  alt="Numeral four within orange circle">
+                          </div>
+                              
+                          <div>
+                              <label for="sport">
+                                  What is your favorite sport?
+                              </label>
+                          </div>
+                      </div><!--END GRID CONTAINER-->
+                  </td>
+
+                  <td>
+                      <select id="sport" name="sport">
+                          <option value="Football">Football</option>
+                          <option value="Baseball">Baseball</option>
+                          <option value="Baketball">Baketball</option>
+                          <option value="Hockey">Hockey</option>
+                          <option value="Soccer">Soccer</option>
+                      </select>
+                  </td>
+              </tr>
+
+
+        <tr >
+          <td class="center-text"><img src="images/maestro180x198.jpg" 
+                alt="Maestro"/></td>
+          <td>
+              
+            <div style="text-align: center">
+                <img src="images/number5-orange-circle.png" width="20px"  alt="Numeral five within orange circle"> 
+            </div>
+            <b><span style="text-align: center" class="orange-text center-text">This is my Kitty</span></b><br>Can you guess his name?<br>His coat is a clue (It's very silky,<br> by the way)<br>
+        
+            <input id="guess1" type="radio" name="guess">
+            <label for "guess1">Scooter</label><br>
+
+            <input id="guess2" type="radio" name="guess">
+            <label for "guess2">Maestro</label><br>
+
+            <input id="guess3" type="radio" name="guess">
+            <label for "guess3">Bugs Bunny</label><br>
+
+            <input id="guess4" type="radio" name="guess">
+            <label for "guess4">Bill</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="center-text black-bg less-padding" colspan="2">
+              <input class="orange-bg round10" type="submit" value="submit">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>
